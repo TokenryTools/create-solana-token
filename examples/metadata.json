@@ -1,0 +1,6 @@
+{
+  "name": "Demo Token",
+  "symbol": "DEMO",
+  "description": "A test token created on devnet with create-solana-token.",
+  "image": "https://raw.githubusercontent.com/TokenryTools/create-solana-token/main/examples/token.png"
+}

@@ -1,0 +1,8 @@
+node_modules
+.env
+.env.*
+!.env.example
+# Keypair files: never commit a secret key
+id.json
+*keypair*.json
+*wallet*.json

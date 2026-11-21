@@ -1,0 +1,32 @@
+{
+  "name": "create-solana-token",
+  "version": "1.0.0",
+  "description": "Create a Solana token with metadata in one command, classic SPL Token or Token-2022, with @solana/kit",
+  "scripts": {
+    "create": "tsx src/create-token.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "author": "Tokenry (https://tokenry.tools)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TokenryTools/create-solana-token.git"
+  },
+  "type": "module",
+  "dependencies": {
+    "@solana-program/system": "0.16.0",
+    "@solana-program/token": "0.18.0",
+    "@solana-program/token-2022": "0.20.1",
+    "@solana/kit": "8.6.0",
+    "@solana/sysvars": "8.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}
