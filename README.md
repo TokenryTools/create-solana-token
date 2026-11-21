@@ -4,6 +4,8 @@ A small TypeScript CLI that creates a Solana token in one command with [`@solana
 
 Devnet by default. Mainnet only with `--mainnet` plus a typed confirmation.
 
+> **Prefer no code?** [Tokenry's Solana Token Creator](https://tokenry.tools/solana-token-creator) creates a classic SPL token in the browser with your own wallet: it stores the logo, description and links for you and offers the mint, freeze and update authority revokes in the same approval, with nothing to install.
+
 ## What it does
 
 - **One atomic transaction.** Create the mint, add metadata, create your token account, mint the supply and (optionally) revoke authorities. If any step fails, nothing is created.
@@ -183,10 +185,6 @@ You can also put these in a `.env` file (copy `.env.example`); variables set in 
 - **Revoking is permanent.** After `--revoke-mint` nobody can ever mint more of the token. After `--revoke-freeze` nobody can ever freeze an account. There is no undo.
 - **Mainnet asks first.** `--mainnet` shows the plan and the cost estimate, then waits for you to type `yes` in a terminal. It refuses to run when the input is not a terminal, so a script cannot confirm for you.
 - **Metadata stays editable.** Your wallet remains the metadata update authority, so keep that keypair safe.
-
-## Prefer no code?
-
-[Tokenry's Solana Token Creator](https://tokenry.tools/solana-token-creator) creates a classic SPL token in the browser with your own wallet: it stores the logo, description and links for you and offers the mint, freeze and update authority revokes in the same approval, with nothing to install.
 
 ## Versions
 
